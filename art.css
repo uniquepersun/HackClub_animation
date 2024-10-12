@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+}
+.cls-1 {
+    stroke: aquamarine;
+    stroke-width: 3px;
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1500;
+    stroke: var(--color);
+    animation: lines 5s infinite calc(var(--item) * 1s);
+
+}
+
+@keyframes lines {
+    100% {
+        stroke-dashoffset: 3000;
+    }
+}
